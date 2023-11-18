@@ -7,9 +7,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images/learnmore-logo-transparent.png" type="image/png" />
-		
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<style>
+			/* Adjusted styles for the login link and Get Started button */
+			#nav li:nth-last-child(2) a {
+				background-color: #4CAF50; /* Green color */
+				color: white;
+				padding: 8px 16px;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+	
+			#nav li:nth-last-child(2) a:hover {
+				background-color: #45a049; /* Darker green color on hover */
+			}
+	
+			/* Retained the original styles for the Get Started button */
+			#nav li:last-child a {
+				background-color: darkblue; /* Original blue color */
+				color: #fff; /* White text color */
+				border: 2px solid #333; /* Border color for the original button */
+				border-radius: 5px;
+				padding: 8px 16px; /* Adjusted padding as needed */
+				display: inline-block; /* Ensure the link is treated as a block element */
+				text-decoration: none; /* Remove default underline for links */
+			}
+	
+			#nav li:last-child a:hover,
+			#nav li:last-child a:focus {
+				background-color: transparent;
+				color: #fff;
+			}
+		</style>
+		</head>
 
-	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
@@ -22,7 +53,12 @@
 						<li><a href="about.html">About</a></li>
 						<li><a href="become-tutor.html">Become a Tutor</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a class="btn btn--border theme-btn--primary-inverse-other sqs-button-element--primary" href="/get-started">Get Started</a></li>
+						<li><a class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+                            href="/get-started" style="color: #fff;">Get Started</a></li>
+                    <!-- Added login link -->
+                    <li><a class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+						href="/login" style="color: #fff;">Login</a></li>
+
 					</ul>
 								</nav>
 			</header>
@@ -68,7 +104,7 @@
 												<p>Unlock the door to a rewarding educational adventure by becoming a LearnMore Tutor. <strong>Click belowto ignite curiosity, foster growth, and shape the future.</strong> </p>
 												<footer>
 													<ul class="buttons">
-														<li><a href="#" class="button small" style="background-color: teal; color: white;">Sign Up Now!</a></li>
+														<li><a href="https://forms.gle/X8KmPCk8owMVdmZT6" class="button small" style="background-color: teal; color: white;">Sign Up Now!</a></li>
 													</ul>
 												</footer>
 											</section>
@@ -80,7 +116,7 @@
 												<p>Have questions about becoming a LearnMore Tutor? We're here to help! Reach out for more info and start your journey to inspiring young minds.</p>
 												<footer>
 													<ul class="buttons">
-														<li><a href="#" class="button small" style="background-color: teal; color: white;">Contact Us</a></li>
+														<li><a href="contact.html" class="button small" style="background-color: teal; color: white;">Contact Us</a></li>
 													</ul>
 												</footer>
 											</section>
@@ -92,19 +128,16 @@
 
 				</article>
 
+
+
 			<!-- Footer -->
 			<footer id="footer">
-
-				<ul class="icons">
-					<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-				</ul>
-
 				<ul class="copyright">
-					<li>&copy; LearnMore Tutors</li>
+					<li> LearnMore Tutors 2023</li>
 				</ul>
 
 			</footer>
+
 
 	</div>
 

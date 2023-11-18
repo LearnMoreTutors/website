@@ -7,9 +7,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images/learnmore-logo-transparent.png" type="image/png" />
-		
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<style>
+			/* Adjusted styles for the login link and Get Started button */
+			#nav li:nth-last-child(2) a {
+				background-color: #4CAF50; /* Green color */
+				color: white;
+				padding: 8px 16px;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+	
+			#nav li:nth-last-child(2) a:hover {
+				background-color: #45a049; /* Darker green color on hover */
+			}
+	
+			/* Retained the original styles for the Get Started button */
+			#nav li:last-child a {
+				background-color: darkblue; /* Original blue color */
+				color: #fff; /* White text color */
+				border: 2px solid #333; /* Border color for the original button */
+				border-radius: 5px;
+				padding: 8px 16px; /* Adjusted padding as needed */
+				display: inline-block; /* Ensure the link is treated as a block element */
+				text-decoration: none; /* Remove default underline for links */
+			}
+	
+			#nav li:last-child a:hover,
+			#nav li:last-child a:focus {
+				background-color: transparent;
+				color: #fff;
+			}
+		</style>
+		</head>
 
-	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
@@ -22,78 +53,60 @@
 						<li><a href="about.html">About</a></li>
 						<li><a href="become-tutor.html">Become a Tutor</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a class="btn btn--border theme-btn--primary-inverse-other sqs-button-element--primary" href="/get-started">Get Started</a></li>
+						<li><a class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+                            href="/get-started" style="color: #fff;">Get Started</a></li>
+                    <!-- Added login link -->
+                    <li><a class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+						href="/login" style="color: #fff;">Login</a></li>
+
 					</ul>
 								</nav>
 			</header>
 
-			<!-- Main -->
-				<article id="main">
+        <!-- Main -->
+        <article id="main">
 
-					<header class="special container">
-						<span class="icon solid fa-envelope"></span>
-						<h2>Get In Touch</h2>
-						<p>Connect with Us for More Information</p>
-					</header>
+            <header class="special container">
+                <span class="icon solid fa-envelope"></span>
+                <h2>Get In Touch</h2>
+            </header>
 
-					<!-- One -->
-						<section class="wrapper style4 special container medium">
+            <!-- One -->
+            <section class="wrapper style4 special container medium">
 
-							<!-- Content -->
-								<div class="content">
-									<form>
-										<div class="row gtr-50">
-											<div class="col-6 col-12-mobile">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-mobile">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="7"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="buttons">
-													<li><input type="submit" class="special" value="Send Message" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
+                <!-- Content -->
+                <div class="content">
+                    <div class="container">
+                        <p>We'd love to hear from you! Please feel free to email us at:</p>
+                        <p><a href="mailto:learnmoretutorscompany@gmail.com">learnmoretutorscompany@gmail.com</a></p>
+                    </div>
+                </div>
 
-						</section>
+            </section>
 
-				</article>
 
 			<!-- Footer -->
-			<footer id="footer">
+            <footer id="footer">
+                <ul class="copyright">
+                    <li> LearnMore Tutors 2023</li>
+                </ul>
 
-				<ul class="icons">
-					<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-				</ul>
+            </footer>
 
-				<ul class="copyright">
-					<li>&copy; LearnMore Tutors</li>
-				</ul>
 
-			</footer>
+    </div>
 
-	</div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollgress.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</body>
 
-	</body>
 </html>
